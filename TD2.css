@@ -18,6 +18,7 @@
 .menu1 a {
   color: white;
   text-decoration: none;
+  font-size: 12px
 }
 
 .menu2 {
@@ -33,10 +34,10 @@
 
 .menu2 li {
   background: linear-gradient(to right, grey, orange);
-  width: 100px;
+  width: 70px;
   
   display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
   margin-right: 2px;
@@ -49,6 +50,7 @@
   display: block;
   color: black;
   text-decoration: none;
+  font-size: 12px
 }
 
 .sous-menu2 {
@@ -56,7 +58,7 @@
   list-style: none;
   position: absolute;
   padding: 0;
-  top: 100%;
+  top: 105%;
   left: 0;
 }
 
