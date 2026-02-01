@@ -73,13 +73,23 @@
   border-bottom-left-radius: 5px;
 }
 
-.parent:hover .sous-menu2 {
+.parent1:hover .sous-menu2 {
   display: flex;
-
   flex-direction: column;
 }
 
 .sous-menu2 a:hover {
   background-color: orange;
   transition: opacity 0.5s ease;
+}
+
+.ssous-menu2 {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+.parent2:hover .ssous-menu2 {
+  display:flex;
+
 }
