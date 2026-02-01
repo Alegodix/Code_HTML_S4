@@ -1,95 +1,110 @@
-
+/* --- EXERCICE 1 --- */
 .menu1 {
-  background-color: black;
-  display: inline-block;
+    background-color: black;
+    display: inline-block;
 }
 
 .menu1 ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .menu1 li {
-  margin-right: 20px;
+    margin-right: 20px;
+    padding: 5px 10px;
 }
 
 .menu1 a {
-  color: white;
-  text-decoration: none;
-  font-size: 12px
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
 }
 
+/* --- EXERCICE 2 --- */
 .menu2 {
-  display: inline-block;
+    display: inline-block;
 }
 
 .menu2 > ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .menu2 li {
-  background: linear-gradient(to right, grey, orange);
-  width: 70px;
-  
-  display: inline-block;
+    background: linear-gradient(to right, grey, orange);
+    width: 100px;
     padding: 0 10px;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
-  margin-right: 2px;
-  border-bottom: 1px solid black;
-
-  position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 2px;
+    border-bottom: 1px solid black;
+    position: relative;
+    list-style: none;
 }
 
 .menu2 a {
-  display: block;
-  color: black;
-  text-decoration: none;
-  font-size: 12px
+    display: block;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .sous-menu2 {
-  display: none;
-  list-style: none;
-  position: absolute;
-  padding: 0;
-  top: 105%;
-  left: 0;
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    z-index: 10;
 }
 
 .sous-menu2 li {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  background: linear-gradient(to right, white, orange)
+    border-radius: 0;
+    background: linear-gradient(to right, white, orange);
+    width: 100px;
 }
 
 .last-sous-menu2 {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
 }
 
-.parent1:hover .sous-menu2 {
-  display: flex;
-  flex-direction: column;
+.sous-menu22 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100px;
 }
 
-.sous-menu2 a:hover {
-  background-color: orange;
-  transition: opacity 0.5s ease;
+.sous-menu22 li {
+    border-radius: 0;
+    border-left: 1px solid black;
 }
 
-.ssous-menu2 {
-  display: none;
-  top: 0;
-  left: 100%;
+.sous-menu22 li:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.parent2:hover .ssous-menu2 {
-  display:flex;
+.parent:hover > .sous-menu2 {
+    display: flex;
+    flex-direction: column;
+}
 
+.parent-secondaire:hover > .sous-menu22 {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
