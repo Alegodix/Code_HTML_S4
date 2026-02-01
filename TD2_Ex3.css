@@ -1,0 +1,64 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+.cv-global {
+  width: 900px; 
+  border: 1px solid #ccc;
+  background-color: white;
+
+}
+
+.cv-header {
+  background-color: #607d8b; 
+  color: #ccc; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; 
+  border-bottom: 8px solid white; 
+}
+
+
+.cv-corps {
+  display: flex; 
+  min-height: 400px;
+}
+
+
+.cv-sidebar {
+  width: 120px;
+  background-color: #b0c4de; 
+  flex-shrink: 0;
+}
+
+
+.cv-texte {
+  background-color: #fdf5e6; 
+  flex-grow: 1; 
+  padding: 30px;
+}
+
+.cv-texte h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.cv-texte ul {
+  list-style-type: square;
+  margin-bottom: 20px;
+}
+
+
+.cv-footer {
+  background-color: #607d8b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 8px solid white;
+}
