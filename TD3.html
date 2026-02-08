@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice Formulaire</title>
+    <style>
+        /* --- STYLE GÉNÉRAL --- */
+        body {
+            font-family: "Times New Roman", Times, serif; /* Police avec empattement comme sur l'image */
+            padding: 20px;
+        }
+
+        /* Le cadre bleu autour du formulaire */
+        .cadre-formulaire {
+            border: 2px solid #aebac1; /* Couleur gris/bleu */
+            padding: 10px 20px;
+            width: 450px; /* Largeur fixe pour ressembler à l'image */
+            background-color: white;
+        }
+
+        /* Le titre souligné */
+        h2 {
+            font-size: 1.1em;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            text-decoration: underline; /* Souligné */
+            font-weight: bold;
+        }
+
+        /* --- MISE EN PAGE DES LIGNES (Flexbox) --- */
+        .ligne {
+            display: flex;       /* Active l'alignement côte-à-côte */
+            margin-bottom: 10px; /* Espace entre les lignes */
+        }
+
+        /* Colonne de gauche (les étiquettes : Nom, Prénom...) */
+        .colonne-gauche {
+            width: 120px;        /* Largeur fixe pour aligner la 2ème colonne */
+            font-weight: bold;
+            padding-top: 3px;    /* Petit ajustement pour aligner le texte avec la case */
+        }
+
+        /* Colonne de droite (les champs à remplir) */
+        .colonne-droite {
+            flex: 1;             /* Prend le reste de la place */
+        }
+
+        /* --- STYLE DES ÉLÉMENTS SPÉCIFIQUES --- */
+        
+        /* Les zones de texte (Nom, Prénom) */
+        input[type="text"] {
+            border: 1px solid #ccc;
+            width: 160px;
+        }
+
+        /* La zone de commentaire */
+        textarea {
+            width: 220px;
+            height: 60px;
+            font-family: "Courier New", Courier, monospace; /* Police machine à écrire */
+            border: 1px solid #ccc;
+            resize: none; /* Empêche de redimensionner */
+        }
+
+        /* Le bouton Envoyer */
+        .bouton-envoi {
+            margin-top: 10px;
+            padding: 2px 10px;
+            background-color: #e6e6e6;
+            border: 1px solid #888;
+            cursor: pointer;
+            font-family: Arial, sans-serif; /* Le bouton semble avoir une police plus simple */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cadre-formulaire">
+        <h2>Enregistrement d'un utilisateur</h2>
+
+        <form>
+            
+            <div class="ligne">
+                <div class="colonne-gauche">Nom</div>
+                <div class="colonne-droite">
+                    <input type="text" name="nom">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonne-gauche">Prénom</div>
+                <div class="colonne-droite">
+                    <input type="text" name="prenom">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonne-gauche">Sexe</div>
+                <div class="colonne-droite">
+                    Homme : <input type="radio" name="sexe" value="H"><br>
+                    Femme : <input type="radio" name="sexe" value="F">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonne-gauche">Fonction</div>
+                <div class="colonne-droite">
+                    <select name="fonction">
+                        <option value="enseignant">Enseignant</option>
+                        <option value="etudiant">Étudiant</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonne-gauche">Commentaires</div>
+                <div class="colonne-droite">
+                    <textarea name="commentaires">Tapez ici vos commentaires</textarea>
+                </div>
+            </div>
+
+            <br>
+            <input type="submit" value="Envoyer" class="bouton-envoi">
+
+        </form>
+    </div>
+
+</body>
+</html>
