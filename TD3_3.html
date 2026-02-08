@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3</title>
+    <link rel="stylesheet" href="Ex3.css">
+</head>
+<body>
+
+    <fieldset class="cadre-jaune">
+        <legend>Client</legend>
+        
+        <form action="action_page.php">
+            
+            <div class="ligne">
+                <label>Civilité</label>
+                <div class="champs">
+                    <input type="radio" name="civilite" value="Mlle"> Mademoiselle
+                    <input type="radio" name="civilite" value="Mme" checked> Madame
+                    <input type="radio" name="civilite" value="M"> Monsieur
+                </div>
+            </div>
+
+            <div class="ligne">
+                <label>Nom / Prénom</label>
+                <input type="text" name="nom_prenom" style="width: 250px;">
+            </div>
+
+            <div class="ligne align-haut">
+                <label>Adresse</label>
+                <textarea name="adresse" rows="3">Rue No Boite postale</textarea>
+            </div>
+
+            <div class="ligne">
+                <label>No postal / Localité</label>
+                <div class="champs">
+                    <input type="text" name="npa" maxlength="4" style="width: 40px;">
+                    <input type="text" name="localite" value="Lausanne" style="width: 150px;">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <label>Pays</label>
+                <select name="pays">
+                    <option value="france">France</option>
+                    <option value="suisse" selected>Suisse</option> <option value="allemagne">Allemagne</option>
+                </select>
+            </div>
+
+            <div class="ligne">
+                <label>Plateforme(s)</label>
+                <div class="champs">
+                    <label><input type="checkbox" name="os" value="win" checked> Windows</label>
+                    <label><input type="checkbox" name="os" value="mac" checked> Macintosh</label>
+                    <label><input type="checkbox" name="os" value="unix"> Unix</label>
+                </div>
+            </div>
+
+            <div class="ligne align-haut">
+                <label>Applications(s)</label>
+                <select name="apps" multiple size="5"> <option value="bureautique">Bureautique</option>
+                    <option value="dao">DAO</option>
+                    <option value="statistiques">Statistiques</option>
+                    <option value="sgbd">SGBD</option>
+                    <option value="internet" selected>Internet</option>
+                </select>
+            </div>
+
+            <div class="boutons-bas">
+                <input type="submit" value="Soumettre formulaire">
+                <input type="reset" value="Effacer">
+            </div>
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
