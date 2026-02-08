@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 2</title>
+    <link rel="stylesheet" href="Ex2.css">
+</head>
+<body>
+
+    <div class="cadre-formulaire">
+        <div class="titre">Veuillez saisir vos coordonnées dans le formulaire ci-dessous</div>
+        
+        <form action="action_page.php">
+            
+            <div class="ligne-civilite">
+                <input type="radio" name="civilite" value="M"> M. 
+                <input type="radio" name="civilite" value="Mme"> Mme 
+                <input type="radio" name="civilite" value="Mlle"> Mlle
+            </div>
+
+            <div class="ligne-triple">
+                <div class="groupe">
+                    <label>Nom :</label>
+                    <input type="text" name="nom">
+                </div>
+                <div class="groupe">
+                    <label>Prénom :</label>
+                    <input type="text" name="prenom">
+                </div>
+                <div class="groupe">
+                    <label>Société :</label>
+                    <input type="text" name="societe">
+                </div>
+            </div>
+
+            <div class="ligne">
+                <label style="width: 80px;">N° et rue :</label>
+                <input type="text" name="rue" class="input-long">
+            </div>
+
+            <div class="section-centrale">
+                
+                <div class="colonne-gauche">
+                    <div class="ligne">
+                        <label>Code Postal :</label>
+                        <input type="text" name="cp" style="width: 50px; margin-right: 10px;">
+                        <label>Ville :</label>
+                        <input type="text" name="ville" style="flex: 1;">
+                    </div>
+                    
+                    <div class="ligne align-bas">
+                        <label>Votre Message</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="colonne-droite">
+                    <select name="pays" size="8">
+                        <option value="france">France</option>
+                        <option value="angleterre">Angleterre</option>
+                        <option value="allemagne">Allemagne</option>
+                        <option value="australie" selected>Australie</option>
+                        <option value="france2">France</option>
+                        <option value="italie">Italie</option>
+                        <option value="japon">Japon</option>
+                        <option value="usa">USA</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ligne-bas">
+                <label>Adresse E-Mail</label>
+                <input type="text" name="email" class="input-moyen">
+                <div class="boutons">
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="Effacer">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
