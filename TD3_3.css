@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Le cadre jaune spécifique à cet exercice */
+.cadre-jaune {
+    background-color: #ffff66; /* Le jaune vif de l'image */
+    border: 1px solid #aaa;
+    width: 600px;
+    padding: 10px 20px;
+}
+
+legend {
+    font-weight: bold;
+    background-color: white; /* Petit truc pour que le titre coupe la ligne proprement */
+    padding: 0 5px;
+    border: 1px solid #aaa; /* Optionnel, dépend du navigateur */
+}
+
+.ligne {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center; /* Aligne verticalement au centre */
+}
+
+/* Alignement spécial pour les zones hautes (Textarea et Liste multiple) */
+.align-haut {
+    align-items: flex-start; /* Aligne le label en haut */
+}
+
+label {
+    width: 150px; /* Largeur fixe pour aligner tous les champs */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Mise en forme des inputs */
+input[type="text"], textarea, select {
+    border: 1px solid #999;
+}
+
+textarea {
+    width: 300px;
+    font-family: monospace; /* Police style machine à écrire pour l'adresse */
+}
+
+/* Pour la liste à choix multiples */
+select[multiple] {
+    width: 150px;
+}
+
+.boutons-bas {
+    text-align: center; /* Centre les boutons */
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0aa; /* Petite ligne de séparation subtile */
+}
+
+input[type="submit"], input[type="reset"] {
+    margin: 0 5px;
+    padding: 2px 10px;
+}
