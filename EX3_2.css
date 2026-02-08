@@ -1,0 +1,97 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    padding: 20px;
+}
+
+.cadre-formulaire {
+    border: 1px solid #888;
+    padding: 15px;
+    width: 600px; /* Plus large que l'exo 1 */
+    background-color: white;
+}
+ 
+.titre {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* --- Espacements généraux --- */
+.ligne, .ligne-civilite, .ligne-bas {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center; /* Aligne verticalement au centre */
+}
+
+input[type="text"], textarea, select {
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 1px 2px #eee; /* Petit effet d'ombre interne */
+}
+
+/* --- Ligne Nom / Prénom / Société --- */
+.ligne-triple {
+    display: flex;
+    justify-content: space-between; /* Ecarte les éléments */
+    margin-bottom: 15px;
+}
+.groupe label {
+    margin-right: 5px;
+}
+.groupe input {
+    width: 90px;
+}
+
+/* --- Ligne Rue --- */
+.input-long {
+    flex: 1; /* Prend toute la largeur disponible */
+}
+
+/* --- Section Centrale (2 colonnes) --- */
+.section-centrale {
+    display: flex;
+    gap: 15px; /* Espace entre la partie gauche et la liste pays */
+    margin-bottom: 15px;
+}
+
+.colonne-gauche {
+    flex: 1; /* Prend la place restante */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Zone Message */
+.align-bas {
+    align-items: flex-end; 
+    margin-top: auto; 
+}
+
+textarea {
+    width: 250px;
+    height: 80px;
+    margin-left: auto; 
+    resize: none;
+}
+
+
+select {
+    width: 120px;
+}
+
+/* --- Pied de formulaire (Email + Boutons) --- */
+.ligne-bas {
+    justify-content: space-between;
+}
+
+.input-moyen {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.boutons input {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 2px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: Arial, sans-serif;
+}
